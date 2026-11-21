@@ -1,0 +1,176 @@
+.about-card {
+    width: min(90%, 1000px);
+    margin: 32px auto;
+    padding: 32px;
+
+    background: var(--card-bg);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+
+    border: 1px solid var(--card-border);
+    border-radius: 24px;
+
+    box-shadow:
+        0 20px 40px rgba(0,0,0,.4),
+        inset 0 1px 0 rgba(255,255,255,.1);
+}
+
+.about-card h1 {
+    color: #A9F2E8;
+    font-size: clamp(1.75rem, 4vw, 2.25rem);
+}
+
+.about-card p {
+    line-height: 1.8;
+    color: rgba(245, 247, 250, 0.9);
+    font-size: 1rem;
+}
+
+.about-card h6 {
+    margin-top: 24px;
+    padding: 12px 16px;
+
+    background: rgba(255,255,255,0.05);
+    border-left: 4px solid #A9F2E8;
+    border-radius: 8px;
+
+    color: rgba(245,247,250,0.7);
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.meet-the-team {
+        width: min(90%, 1000px);
+    margin: 1px auto;
+    padding: 32px;
+
+    background: var(--card-bg);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+
+    border: 1px solid var(--card-border);
+    border-radius: 24px;
+
+    box-shadow:
+        0 20px 40px rgba(0,0,0,.4),
+        inset 0 1px 0 rgba(255,255,255,.1);
+    text-align: center;
+}
+
+.ryan-card {
+    display: flex;
+    gap: 2rem;
+
+    width: min(90%, 1000px);
+    margin: 32px auto;
+    padding: 32px;
+
+    background: var(--card-bg);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+
+    border: 1px solid var(--card-border);
+    border-radius: 24px;
+
+    box-shadow:
+        0 20px 40px rgba(0,0,0,.4),
+        inset 0 1px 0 rgba(255,255,255,.1);
+}
+
+#ryanimg {
+    width: 200px;
+    height: auto;
+
+    border-radius: 18px;
+
+    border: 2px solid rgba(169,242,232,.25);
+
+    box-shadow:
+        0 0 20px rgba(62,232,187,.2);
+}
+
+.role-pill {
+    width: fit-content;
+
+    padding: 8px 16px;
+    margin: 10px 0;
+
+    border-radius: 999px;
+
+    background: rgba(62,232,187,.15);
+
+    border: 1px solid rgba(169,242,232,.3);
+
+    color: #A9F2E8;
+
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+#info-hr {
+    border: none;
+    height: 2px;
+
+    background: #A9F2E8
+}
+
+.ryan-info h1 {
+    margin: 0;
+    font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.years {
+    color: rgba(245,247,250,.6);
+    font-weight: 500;
+}
+
+.ryan-info h2 {
+    color: #A9F2E8;
+}
+
+@media (max-width: 768px) {
+
+    .about-card,
+    .meet-the-team,
+    .ryan-card {
+        width: 95%;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .ryan-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #ryanimg {
+        width: 175px;
+    }
+
+    .ryan-info {
+        width: 100%;
+        align-items: center;
+    }
+
+    .ryan-info h1 {
+        font-size: 2rem;
+    }
+
+    .about-card h1 {
+        font-size: 1.75rem;
+    }
+
+    .about-card p {
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
+
+    .role-pill {
+        margin: 10px auto;
+    }
+
+    #info-hr {
+        width: 100%;
+    }
+}

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eroo Weather: Rochester NY's best source for weather</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+</head>
+<body>
+<!--Load in animation-->
+<div class="transition-container">
+    <div class="swipe s1"></div>
+    <div class="swipe s2"></div>
+    <div class="swipe s3"></div>
+    <div class="swipe s4"></div>
+</div>
+<script src="animation.js"></script>
+<!--Navigation-->
+<nav class="navbar">
+    <div class="logo">
+        <h1>Eroo Weather</h1>
+    </div>
+
+    <button class="menu-toggle" aria-label="Open navigation"
+        aria-expanded="false" aria-controls="nav-links">
+        <span></span>
+        <span></span>
+    </button>
+
+    <div class="nav-links" id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about/index.html">About</a>
+    </div>
+</nav>
+<!--Main page content-->
+<div class="HighAndLow">
+    <div class="high">
+        <div id="temperatureHigh">
+            <h1 id="high-temp">--°</h1>
+        </div>
+        <h2 class="subtext">The high today will be <span id="highdesc"></span></h2>
+        <p class="subtext">And <span id="avghigh"></span> average</p>
+    </div>
+    <div class="low">
+        <div id="temperatureLow">
+            <h1 id="low-temp">--°</h1>
+        </div>
+        <h2 class="subtext">The low tonight will be <span id="lowdesc"></span></h2>
+        <p class="subtext">And <span id="avglow"></span> average</p>
+    </div>
+    <div class="low">
+        <div id="temperature3hr">
+            <img src="assets/flat-arrow.png" alt="steady icon" id="arrow">
+        </div>
+        <h2 class="subtext">Temperatures to <span id="tempChange"></span></h2>
+        <p class="subtext">In the next 3hr</p>
+    </div>
+</div>
+<div class="avgSection">
+    <h1 id="avgSecHigh">Average high<span id='avgSectionHigh'></span></h1>
+    <h1 id="avgSecLow">Average low<span id='avgSectionLow'></span></h1>
+    <h1 id="avgSecSunrise">Sunrise<span id='sunrise'></span></h1>
+    <h1 id="avgSecSunset">Sunset<span id='sunset'></span></h1>
+</div>
+<div class="sevenDay">
+    <h1 id="sevenDayTitle">7-Day Forecast</h1>
+    <div class="cards">
+        <div class="cardOne">
+            <h1 id="cardOneHigh">72°</h1>
+            <h2 id="cardOneLow">50°</h2>
+            <img src="icons/sunny.png" id="cardOneImg">
+            <h2 id="cardOnePoP">--%</h2>
+            <h2 id="cardOneWeekday">Mon</h2>
+            <h3 id="cardOneDate">1/1</h3>
+        </div>
+        <div class="cardTwo">
+            <h1 id="cardTwoHigh">72°</h1>
+            <h2 id="cardTwoLow">50°</h2>
+            <img src="icons/sunny.png" id="cardTwoImg">
+            <h2 id="cardTwoPoP">--%</h2>
+            <h2 id="cardTwoWeekday">Mon</h2>
+            <h3 id="cardTwoDate">1/1</h3>
+        </div>
+        <div class="cardThree">
+            <h1 id="cardThreeHigh">72°</h1>
+            <h2 id="cardThreeLow">50°</h2>
+            <img src="icons/sunny.png" id="cardThreeImg">
+            <h2 id="cardThreePoP">--%</h2>
+            <h2 id="cardThreeWeekday">Mon</h2>
+            <h3 id="cardThreeDate">1/1</h3>
+        </div>
+        <div class="cardFour">
+            <h1 id="cardFourHigh">72°</h1>
+            <h2 id="cardFourLow">50°</h2>
+            <img src="icons/sunny.png" id="cardFourImg">
+            <h2 id="cardFourPoP">--%</h2>
+            <h2 id="cardFourWeekday">Mon</h2>
+            <h3 id="cardFourDate">1/1</h3>
+        </div>
+        <div class="cardFive">
+            <h1 id="cardFiveHigh">72°</h1>
+            <h2 id="cardFiveLow">50°</h2>
+            <img src="icons/sunny.png" id="cardFiveImg">
+            <h2 id="cardFivePoP">--%</h2>
+            <h2 id="cardFiveWeekday">Mon</h2>
+            <h3 id="cardFiveDate">1/1</h3>
+        </div>
+        <div class="cardSix">
+            <h1 id="cardSixHigh">72°</h1>
+            <h2 id="cardSixLow">50°</h2>
+            <img src="icons/sunny.png" id="cardSixImg">
+            <h2 id="cardSixPoP">--%</h2>
+            <h2 id="cardSixWeekday">Mon</h2>
+            <h3 id="cardSixDate">1/1</h3>
+        </div>
+        <div class="cardSeven">
+            <h1 id="cardSevenHigh">72°</h1>
+            <h2 id="cardSevenLow">50°</h2>
+            <img src="icons/sunny.png" id="cardSevenImg">
+            <h2 id="cardSevenPoP">--%</h2>
+            <h2 id="cardSevenWeekday">Mon</h2>
+            <h3 id="cardSevenDate">1/1</h3>
+        </div>
+    </div>
+</div>
+<script src="scripts/eWidgets.js"></script>
+
+
+
+<div class="weather-dashboard">
+  <!-- Left Column: Current Conditions & Sun Details Stacked -->
+  <div class="left-column">
+    <!-- Card 1: Current Conditions -->
+    <div class="current-conditions">
+      <h2 class="title">Current Conditions<br><small>at KROC</small></h2>
+      <div class="data">
+        <img id="weatherIcon" src="icons/sunny.png" alt="Weather Icon">
+        <div class="weather-details">
+          <div id="currentTemp" class="temperature">--°F</div>
+          <div id="cond" class="condition-text">Loading...</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3: Sun Details -->
+    <div class="sun-container">
+      <h2 class="title">Today's Sunrise/Sunset</h2>
+      <div class="sun-details">
+        <div class="sun-item">
+          <span class="sun-label">Sunrise</span>
+          <span id="sunriseTime" class="sun-time">Loading...</span>
+        </div>
+        <div class="sun-item">
+          <span class="sun-label">Sunset</span>
+          <span id="sunsetTime" class="sun-time">Loading...</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Right Column: Next 3 Hours (Gets wide horizontal space) -->
+  <div class="hourly-container">
+    <h2 class="title">Next 3 Hours</h2>
+    <div id="hourlySlots" class="hourly-slots">
+      <!-- Generated dynamically -->
+    </div>
+  </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
